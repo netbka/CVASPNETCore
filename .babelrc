@@ -1,0 +1,9 @@
+{
+	"presets":[
+		"latest"
+	],
+	"ignore": [
+		"node_modules/*"
+	],
+	"plugins": ["transform-class-properties"]
+}
