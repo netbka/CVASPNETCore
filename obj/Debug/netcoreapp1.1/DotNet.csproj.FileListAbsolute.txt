@@ -1,0 +1,9 @@
+E:\Git\DotNet\bin\Debug\netcoreapp1.1\DotNet.deps.json
+E:\Git\DotNet\bin\Debug\netcoreapp1.1\DotNet.runtimeconfig.json
+E:\Git\DotNet\bin\Debug\netcoreapp1.1\DotNet.runtimeconfig.dev.json
+E:\Git\DotNet\bin\Debug\netcoreapp1.1\DotNet.dll
+E:\Git\DotNet\bin\Debug\netcoreapp1.1\DotNet.pdb
+E:\Git\DotNet\obj\Debug\netcoreapp1.1\DotNet.csproj.CoreCompileInputs.cache
+E:\Git\DotNet\obj\Debug\netcoreapp1.1\DotNet.AssemblyInfo.cs
+E:\Git\DotNet\obj\Debug\netcoreapp1.1\DotNet.dll
+E:\Git\DotNet\obj\Debug\netcoreapp1.1\DotNet.pdb
