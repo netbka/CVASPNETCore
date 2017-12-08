@@ -12,7 +12,7 @@ module.exports = (env) => {
                 'jquery',
                 'vue',
                 'uikit',
-                './ClientApp/Css/style.scss',
+                './ClientApp/GlobalAssets/Css/style.scss',
             ]
         },
         target: 'web',

@@ -6,7 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>@ViewData["Title"]</title>
 	<base href="/" />
-	<link rel="shortcut icon" href="/favicon.ico" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+	<link rel="shortcut icon" href="~/images/favicon.ico" />
 	<meta name="description" content="Шаблон для создания страниц">
 	<meta name="Keywords" content="KeyWords">
 	<meta name="author" content="Мамруков Петр">
@@ -28,6 +30,10 @@
 
 <body>
 	<div id="app">
+        <div style="padding: 10%;text-align:center;height:100%;background-color:#FFF;color:#B0BEC5; font-family:Roboto,sans-serif;">
+      <img src="~/images/loading.gif" >
+      <h3 style="font-weight:100 !important; font-size:3.3em;">Загружаемся....</h3>
+    </div>
 	</div>
   @RenderBody()
 </body>

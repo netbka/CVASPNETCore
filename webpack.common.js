@@ -4,7 +4,7 @@ import path from 'path';
 
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import CleanWebpackPlugin from 'clean-webpack-plugin';
-
+import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 export default {
 	//devtool: 'inline-source-map',
@@ -14,17 +14,31 @@ export default {
 	},
 	target: 'web',
 
-	plugins: [new CleanWebpackPlugin(['wwwroot'], {
-		root: __dirname,
-		exclude: ['favicon.ico','dist'],
-		verbose: true,
-		dry: false
-	}),
+	plugins: [
+	// 	new CleanWebpackPlugin(['wwwroot'], {
+	// 	root: __dirname,
+	// 	exclude: ['favicon.ico','dist'],
+	// 	verbose: true,
+	// 	dry: false
+	// }),
 	new webpack.LoaderOptionsPlugin({ noInfo: false, debug:true}),
 	new webpack.ProvidePlugin({
 		$: 'jquery', jQuery: 'jquery',
 	}),
-	
+	new CopyWebpackPlugin([{
+		from: './ClientApp/GlobalAssets/Images/favicon.ico',
+		to: 'images/favicon.ico',
+		toType: 'file'
+	},
+	{
+		from: './ClientApp/GlobalAssets/Images/loading.gif',
+		to: 'images/loading.gif',
+		toType: 'file'
+	}
+	],
+	{
+		copyUnmodified: true
+	})
 
 	],
 	module: {
