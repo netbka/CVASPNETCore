@@ -3,7 +3,7 @@ import path from 'path';
 //import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
-import CleanWebpackPlugin from 'clean-webpack-plugin';
+//import CleanWebpackPlugin from 'clean-webpack-plugin';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 export default {

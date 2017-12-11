@@ -1,19 +1,21 @@
 <template>
-  <div class="example">{{ msg }}</div>
+<div>
+       <app-header></app-header>
+       <app-content></app-content>
+</div>       
 </template>
 
 <script>
+import AppHeader from './AppHeader.vue';
+import AppContent from './AppContent.vue';
 export default {
-  data () {
-    return {
-      msg: 'Hello world!'
-    }
+  components:{
+   'app-header': AppHeader,
+   'app-content':AppContent
   }
 }
 </script>
 
 <style>
-.example {
-  color: green;
-}
+
 </style>

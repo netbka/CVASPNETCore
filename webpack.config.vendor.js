@@ -10,19 +10,21 @@ module.exports = (env) => {
         entry: {
             vendor: [
                 'jquery',
-                'vue',
+               
                 'uikit',
+                'uikit/dist/js/uikit-icons',
+                'vue',
                 './ClientApp/GlobalAssets/Css/style.scss',
+                './ClientApp/GlobalAssets/Css/custom.css',
             ]
         },
-        target: 'web',
+       // target: 'web',
         stats: { modules: false },
         resolve: { extensions: [ '.js' ] },
         module: {
             rules: [
                 { test: /\.(jpg|jpeg|gif|png|svg|woff|woff2|eot|ttf|otf)(\?|$)/, use: 'url-loader?limit=10000' },
-               // { test: /\.css$/, use: ExtractTextPlugin.extract({ fallback: "style-loader", use: "css-loader" }) },
-              //  { test: /\.scss$/, loaders: ['style-loader', 'css-loader', 'sass-loader'] },
+                
             ]
         },
         
@@ -41,9 +43,10 @@ module.exports = (env) => {
         module: {
             rules: [
                { test: /\.css(\?|$)/, use: extractCSS.extract({ use: isDevBuild ? 'css-loader' : 'css-loader?minimize' }) },
-               { test: /\.scss$/, use: ['style-loader', 'css-loader', 'sass-loader'] },
-
+               //{ test: /\.scss$/, use: ['style-loader', 'css-loader', 'sass-loader'] },
+               {test: /.scss$/, use: ExtractTextPlugin.extract({fallback: 'style-loader',use: ["css-loader", "sass-loader"]})}
             ]
+            
         },
         plugins: [
             extractCSS,
