@@ -6,14 +6,14 @@
 </template>
 
 <script>
-import AppHeader from './AppHeader.vue';
-import AppContent from './AppContent.vue';
+import AppHeader from "./AppHeader.vue";
+import AppContent from "./AppContent.vue";
 export default {
-  components:{
-   'app-header': AppHeader,
-   'app-content':AppContent
+  components: {
+    "app-header": AppHeader,
+    "app-content": AppContent
   }
-}
+};
 </script>
 
 <style>

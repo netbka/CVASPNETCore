@@ -14,6 +14,7 @@ module.exports = (env) => {
                 'uikit',
                 'uikit/dist/js/uikit-icons',
                 'vue',
+                'moment',
                 './ClientApp/GlobalAssets/Css/style.scss',
                 './ClientApp/GlobalAssets/Css/custom.css',
             ]
