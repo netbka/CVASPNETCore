@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import AppLayout from './Home/Layout.vue';
+import AppLayout from './Layout/Layout.vue';
 import UIkit from 'uikit';
 import Icons from 'uikit/dist/js/uikit-icons';
 UIkit.use(Icons);

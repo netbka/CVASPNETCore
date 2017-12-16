@@ -10,6 +10,7 @@ namespace DotNet.Controllers
     {
         public IActionResult Index()
         {
+            ViewData["Title"] = "Мамруков Петр - ИТ Директор / CTO (CIO)";
             return View();
         }
 
