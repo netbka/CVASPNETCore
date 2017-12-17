@@ -12,12 +12,12 @@ module.exports = (env) => {
 		output: {
 			path: path.resolve(__dirname, './wwwroot'),
 			publicPath: '/',
-			filename: '[name].bundle.js'
+			filename: (isDevBuild)?'[name].bundle.js':'[name].bundle.min.js'
 	
 		},
 		plugins: [
 	
-			new ExtractTextPlugin('[name].css'),
+			new ExtractTextPlugin((isDevBuild)?'[name].css': '[name].min.css'),
 			new webpack.NamedModulesPlugin(),
 			//new webpack.HotModuleReplacementPlugin(),
 			new webpack.DllReferencePlugin({
@@ -32,7 +32,13 @@ module.exports = (env) => {
 			})
 	] : [
 			// Plugins that apply in production builds only
-			new webpack.optimize.UglifyJsPlugin()
+            new webpack.optimize.UglifyJsPlugin(),
+            new webpack.DefinePlugin({
+                'process.env': {
+                    NODE_ENV: '"production"'
+                }
+            }),
+            
 	])
 	});
 return [conf];

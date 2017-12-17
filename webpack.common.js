@@ -5,9 +5,10 @@ import path from 'path';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 //import CleanWebpackPlugin from 'clean-webpack-plugin';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
-
+var isDevBuild = process.argv.indexOf('--env.prod') > 0;
 export default {
-	//devtool: 'inline-source-map',
+    //devtool: 'inline-source-map',
+    
 	stats: { modules: false },
 	entry: {
 		main: path.resolve(__dirname, './ClientApp/startup.dev')
@@ -47,7 +48,7 @@ export default {
 			{ test: /\.js$/, exclude: /node_modules/, loaders: ['babel-loader'] },
 			{ test: /\.(jpg|jpeg|gif|png|svg|woff|woff2|eot|ttf|otf)$/, loader: 'url-loader?limit=50000' },
 			{ test: /\.(ico)$/, loader: 'file-loader?name=[name].[ext]' },
-			{ test: /\.css$/, use: ExtractTextPlugin.extract({ fallback: "style-loader", use: "css-loader" }) },
+			{ test: /\.css$/, use: ExtractTextPlugin.extract({ fallback: "style-loader", use: isDevBuild ? 'css-loader' : 'css-loader?minimize' }) },
 			{ test: /\.scss$/, loaders: ['style-loader', 'css-loader', 'sass-loader'] },
 			{ enforce: "pre", test: /(\.js$)|(\.vue$)/, loader: "eslint-loader", exclude: /node_modules/ }
 		]
