@@ -23,38 +23,66 @@
             <div class="uk-container">
                 <div class="uk-grid-small uk-grid" uk-grid>
                     <div class="uk-width-auto@s uk-first-column uk-visible@s ">
-                        <span uk-icon="icon: info"></span>
+                        <span uk-icon="icon: hashtag"></span>
                     </div>
                     <div class="uk-width-expand@s   overview">
-                        <p class="uk-text-justify">
-                            My competitive advantage is my comprehensive experience in operation, finance and technology, in addition to thriving managerial background: People, Project & Product.
-                        </p>
-                        <p class="uk-text-justify">
-                            I have the talent to understand and persuade C-level Executives and skill to deliver appropriate solution aligned with product R&D/budget constraints.
-                        </p>
+                        <h4> Обо мне</h4>
+                        <ul class="uk-list uk-list-large">
+                            <li class="uk-margin-small-top">19 лет опыта работы в области IТ, 9 лет на позициях ТОП-менеджмента (в том числе за границей)</li>
+                            <li class="uk-margin-small-top">Разработка, внедрение и эксплуатация корпоративных информационных систем - Product Owner (ERP, CRM, PMO, системы внутреннего контроля и риски, управление активами, бюджетирование и казначейство)</li>
+                            <li class="uk-margin-small-top">Проектирование центров обработки данных</li>
+                            <li class="uk-margin-small-top">Оказание профессиональных услуг для коммерческих организаций и государственных структур</li>
+                            <li class="uk-margin-small-top">Организация службы Service Desk</li>
+                            <li class="uk-margin-small-top">Формализации IT-стратегии и внедрение политик информационной безопасности</li>
+                            <li class="uk-margin-small-top">Подбор кадров и управление профессиональной командой</li>
+                            <li class="uk-margin-small-top">Опыт в качестве Лектора по подготовке IT-специалистов для получения сертификата Microsoft - MCSE</li>
+                        </ul>
                     </div>
-
                 </div>
             </div>
         </div>
         <div class="uk-section uk-padding-small border-top-blue color-black uk-preserve-color">
             <div class="uk-container">
-        <div class="uk-card uk-card-default uk-card-body">
-            <h3 class="uk-card-title">Professional summary</h3>
-            <ul class="uk-list uk-list-bullet">
-            <li>Collaborating and consensus building with C-level Executives</li>
-            <li>Managerial and leadership experience for 10 years</li>
-            <li>Crisis management and troubleshooting client escalations</li>
-            <li>Technological awareness and curiosity, outstanding assimilation skills</li>
-            <li>Exceptional communication, presentation and interpersonal skills </li>
-            <li>Forming productive business relationships at all levels</li>
-            <li>Agile champion</li>
-            </ul>
-        </div>        
+                <div class="uk-grid-small uk-grid" uk-grid>
+                    <div class="uk-width-auto@s uk-first-column uk-visible@s ">
+                        <span uk-icon="icon: cog"></span>
+                    </div>
+                    <div class="uk-width-expand@s   overview">
+                        <h4> Навыки и технологии</h4>
+                    </div>
+                </div>
+                        <div class="uk-grid-divider uk-grid-small uk-child-width-expand@s skills uk-margin-small-top" uk-grid>
+                            <div>Серверные и коммуникационные решения </div>
+                            <div>
+                            <span class="uk-label labelS label-grey">IBM</span>&nbsp;
+                            <span class="uk-label labelS label-grey">HP</span>&nbsp;
+                            <span class="uk-label labelS label-grey">Cisco</span>&nbsp;
+                            <span class="uk-label labelS label-grey">Avaya</span>&nbsp;
+                            <span class="uk-label labelS label-grey">Brocade</span>&nbsp;
+                            <span class="uk-label labelS label-grey">NetApp</span>
+                            
+
+                            
+                                  </div>
+                        </div>
+                        <div class="uk-grid-divider uk-grid-small uk-child-width-expand@s skills uk-margin-small-top" uk-grid>
+                            <div>Проектирование и разработка бизнес приложений на платформах </div>
+                            <div>Documentum SharePoint 1C Priority</div>
+                        </div>
+                        <div class="uk-grid-divider uk-grid-small uk-child-width-expand@s skills uk-margin-small-top" uk-grid>
+                            <div>Управление службами MS Server Family </div>
+                            <div>AD DNS, GPO DHCP WSUS IIS, ADFS Exchange</div>
+                        </div>
+                        <div class="uk-grid-divider uk-grid-small uk-child-width-expand@s skills uk-margin-small-top" uk-grid>
+                            <div> виртуализация </div>
+                            <div><span class="uk-label labelS">Hyper-V </span>&nbsp; <span class="uk-label labelS">VMware</span> </div>
+                        </div>
+
+                
             </div>
         </div>
+       
 
-        
 
     </div>
 
@@ -105,4 +133,16 @@ export default {
   font-size: calc(9px + (14 - 9) * ((100vw - 300px) / (1600 - 300)));
   line-height: 1.3;
 }
+.skills {
+  font-size: calc(8px + (14 - 8) * ((100vw - 300px) / (1600 - 300)));
+  line-height: 1.3;
+}
+.labelS {
+  font-size: calc(6px + (12 - 6) * ((100vw - 300px) / (1600 - 300)));
+  line-height: 1.3;
+}
+.label-grey {
+  background: #5c6267;
+}
 </style>
+
