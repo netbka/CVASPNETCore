@@ -11,7 +11,7 @@
                 <ul class="uk-navbar-nav">
                   <li class="uk-active"><a href="">Опыт</a></li>
                   <li><a href="">Проекты</a></li>
-                  <li><a href=""></a></li>
+                  <li><a href="">Образование</a></li>
                 </ul>
             </div>
           </div>

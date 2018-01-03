@@ -6,10 +6,11 @@
             </div>
             <div class="uk-container uk-text-center">
                 <span class="uk-text-primary  uk-text-bold">{{fio}} </span><span class="uk-text-primary">({{age}} лет)</span>
-                <hr class="uk-margin-small blue-border"></hr>
+                <hr class="uk-margin-small blue-border" />
                 <div class="uk-text-left uk-text-bold">{{position}} </div>
                 <div class="uk-text-left"><span class="uk-text-bold">Языки: </span><span class="">{{lang}}</span> </div>
-                <div class="uk-text-left"><span uk-icon="icon: location"></span> {{location}} </div>
+                <div class="uk-text-left"><span class="uk-text-bold">Местонахождение: </span> {{location}} </div>
+                <div class="uk-text-left"><span class="uk-text-bold">Образование: </span><span class="">{{education}}</span> </div>
             </div>
         </div>
         <div class="uk-section uk-section-muted uk-padding-small border-top-blue">
@@ -26,7 +27,7 @@
                         <span uk-icon="icon: hashtag"></span>
                     </div>
                     <div class="uk-width-expand@s   overview">
-                        <h4> Обо мне</h4>
+                        <h3> Обо мне</h3>
                         <ul class="uk-list uk-list-large">
                             <li class="uk-margin-small-top">19 лет опыта работы в области IТ, 9 лет на позициях ТОП-менеджмента (в том числе за границей)</li>
                             <li class="uk-margin-small-top">Разработка, внедрение и эксплуатация корпоративных информационных систем - Product Owner (ERP, CRM, PMO, системы внутреннего контроля и риски, управление активами, бюджетирование и казначейство)</li>
@@ -48,40 +49,92 @@
                         <span uk-icon="icon: cog"></span>
                     </div>
                     <div class="uk-width-expand@s   overview">
-                        <h4> Навыки и технологии</h4>
+                        <h3> Навыки и технологии</h3>
                     </div>
                 </div>
-                        <div class="uk-grid-divider uk-grid-small uk-child-width-expand@s skills uk-margin-small-top" uk-grid>
-                            <div>Серверные и коммуникационные решения </div>
-                            <div>
-                            <span class="uk-label labelS label-grey">IBM</span>&nbsp;
-                            <span class="uk-label labelS label-grey">HP</span>&nbsp;
-                            <span class="uk-label labelS label-grey">Cisco</span>&nbsp;
-                            <span class="uk-label labelS label-grey">Avaya</span>&nbsp;
-                            <span class="uk-label labelS label-grey">Brocade</span>&nbsp;
-                            <span class="uk-label labelS label-grey">NetApp</span>
-                            
+                <div class="uk-grid-divider uk-grid-small uk-child-width-expand@s skills uk-margin-small-top" uk-grid>
+                    <div>Серверные и коммуникационные решения </div>
+                    <div>
+                        <span class="uk-label labelS label-grey">IBM</span>&nbsp;
+                        <span class="uk-label labelS label-grey">HP</span>&nbsp;
+                        <span class="uk-label labelS label-grey">Cisco</span>&nbsp;
+                        <span class="uk-label labelS label-grey">Avaya</span>&nbsp;
+                        <span class="uk-label labelS label-grey">Brocade</span>&nbsp;
+                        <span class="uk-label labelS label-grey">NetApp</span>
+                    </div>
+                </div>
+                <div class="uk-grid-divider uk-grid-small uk-child-width-expand@s skills uk-margin-small-top" uk-grid>
+                    <div>Проектирование и разработка бизнес приложений на платформах </div>
+                    <div>
+                        <span class="uk-label labelS label-grey">1C</span>&nbsp;
+                        <span class="uk-label labelS label-grey">SharePoint</span>&nbsp;
+                        <span class="uk-label labelS label-grey">Documentum</span>&nbsp;
+                        <span class="uk-label labelS label-grey">Priority</span>
+                    </div>
+                </div>
+                <div class="uk-grid-divider uk-grid-small uk-child-width-expand@s skills uk-margin-small-top" uk-grid>
+                    <div>Управление службами MS Server Family </div>
+                    <div>
+                        <span class="uk-label labelS label-grey">AD</span>&nbsp;
+                        <span class="uk-label labelS label-grey">DNS</span>&nbsp;
+                        <span class="uk-label labelS label-grey">GPO</span>&nbsp;
+                        <span class="uk-label labelS label-grey">DHCP</span>&nbsp;
+                        <span class="uk-label labelS label-grey">WSUS</span>&nbsp;
+                        <span class="uk-label labelS label-grey">ADFS</span>&nbsp;
+                        <span class="uk-label labelS label-grey">IIS</span>&nbsp;
+                        <span class="uk-label labelS label-grey">Exchange</span>
+                    </div>
+                </div>
+                <div class="uk-grid-divider uk-grid-small uk-child-width-expand@s skills uk-margin-small-top" uk-grid>
+                    <div>Виртуализация </div>
+                    <div>
+                        <span class="uk-label labelS label-grey">Hyper-V </span>&nbsp;
+                        <span class="uk-label labelS label-grey">VMware</span>
+                        <span class="uk-label labelS label-grey">Docker</span>
+                    </div>
+                </div>
+                 <div class="uk-grid-divider uk-grid-small uk-child-width-expand@s skills uk-margin-small-top" uk-grid>
+                    <div>Язык программирования и фрейворки </div>
+                    <div>
+                        <span class="uk-label labelS label-grey">C#</span>&nbsp;
+                        <span class="uk-label labelS label-grey">Javascript</span>&nbsp;
+                        <span class="uk-label labelS label-grey">ASP.NET</span>&nbsp;
+                        <span class="uk-label labelS label-grey">.Net Core</span>&nbsp;
+                        <span class="uk-label labelS label-grey">Vue.Js</span>&nbsp;
+                        <span class="uk-label labelS label-grey">SCSS & CSS</span>
+                        
+                    </div>
+                </div>
+                <div class="uk-grid-divider uk-grid-small uk-child-width-expand@s skills uk-margin-small-top" uk-grid>
+                    <div>Непрерывная поставка и интеграция (CI & CD) - DevOps </div>
+                    <div>
+                        <span class="uk-label labelS label-grey">Teamcity</span>&nbsp;
+                        <span class="uk-label labelS label-grey">Jenkins</span>
+                        <span class="uk-label labelS label-grey">TFS</span>&nbsp;
+                        <span class="uk-label labelS label-grey">Git</span>&nbsp;
+                        <span class="uk-label labelS">Agile</span>
+                    </div>
+                </div>
+                <div class="uk-grid-divider uk-grid-small uk-child-width-expand@s skills uk-margin-small-top" uk-grid>
+                    <div>Информационная безопасность</div>
+                    <div>
+                        <span class="uk-label labelS label-grey">ФЗ №152</span>&nbsp;
+                        <span class="uk-label labelS label-grey">COBiT</span>&nbsp;
+                        <span class="uk-label labelS label-grey">CISSP</span>
+                        
+                    </div>
+                </div>
+                 <div class="uk-grid-divider uk-grid-small uk-child-width-expand@s skills uk-margin-small-top" uk-grid>
+                    <div>Проектирование и разработка баз данных</div>
+                    <div>
+                        <span class="uk-label labelS label-grey">MS SQL</span>&nbsp;
+                        <span class="uk-label labelS label-grey">MySQL</span>
+                    </div>
+                </div>
 
-                            
-                                  </div>
-                        </div>
-                        <div class="uk-grid-divider uk-grid-small uk-child-width-expand@s skills uk-margin-small-top" uk-grid>
-                            <div>Проектирование и разработка бизнес приложений на платформах </div>
-                            <div>Documentum SharePoint 1C Priority</div>
-                        </div>
-                        <div class="uk-grid-divider uk-grid-small uk-child-width-expand@s skills uk-margin-small-top" uk-grid>
-                            <div>Управление службами MS Server Family </div>
-                            <div>AD DNS, GPO DHCP WSUS IIS, ADFS Exchange</div>
-                        </div>
-                        <div class="uk-grid-divider uk-grid-small uk-child-width-expand@s skills uk-margin-small-top" uk-grid>
-                            <div> виртуализация </div>
-                            <div><span class="uk-label labelS">Hyper-V </span>&nbsp; <span class="uk-label labelS">VMware</span> </div>
-                        </div>
-
-                
             </div>
         </div>
-       
+
 
 
     </div>
@@ -98,6 +151,8 @@ var now = Moment();
 let age = now.diff(birthDate, "years");
 let position = "ИТ Директор / CTO(CIO)";
 let lang = "Русский, Английский, Иврит";
+let education =
+  "Университет им. Бен-Гуриона (Израиль). Факультет сетевых коммуникаций, B.Sc Инженер информационной безопасности и систем связи ";
 let location = "Россия (Москва)";
 let tooltipLinkedin = "Профиль в LinkedIn";
 let tooltipMail = "Отправить мне сообщение";
@@ -111,6 +166,7 @@ export default {
       age: age,
       position: position,
       lang: lang,
+      education: education,
       location: location,
       tooltipLinkedin: tooltipLinkedin,
       tooltipMail: tooltipMail,
@@ -133,16 +189,20 @@ export default {
   font-size: calc(9px + (14 - 9) * ((100vw - 300px) / (1600 - 300)));
   line-height: 1.3;
 }
+
 .skills {
   font-size: calc(8px + (14 - 8) * ((100vw - 300px) / (1600 - 300)));
   line-height: 1.3;
 }
+
 .labelS {
   font-size: calc(6px + (12 - 6) * ((100vw - 300px) / (1600 - 300)));
   line-height: 1.3;
 }
+
 .label-grey {
   background: #5c6267;
 }
 </style>
+
 

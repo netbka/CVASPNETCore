@@ -1,13 +1,19 @@
-$global-font-family: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif !default;
-$global-font-size: calc(10px + (16 - 10) * ((100vw - 300px) / (1600 - 300)));;
+$global-font-family: -apple-system,
+BlinkMacSystemFont,
+Roboto,
+"Helvetica Neue",
+Arial,
+sans-serif !default;
+$global-font-size: calc(10px + (16 - 10) * ((100vw - 300px) / (1600 - 300)));
 $padding-small-padding: 5px;
-
+$base-h3-font-size: 1.35rem;
+$base-h4-font-size: 1.25rem;
 @import "~uikit/src/scss/variables-theme.scss";
 @import "~uikit/src/scss/mixins-theme.scss";
-
 // 3. Your custom mixin overwrites.
-@mixin hook-card() { color: #000; }
-
+@mixin hook-card() {
+    color: #000;
+}
 
 // 4. Import UIkit.
 @import "~uikit/src/scss/uikit-theme.scss";
