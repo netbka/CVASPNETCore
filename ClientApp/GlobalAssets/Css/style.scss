@@ -8,6 +8,7 @@ $global-font-size: calc(10px + (16 - 10) * ((100vw - 300px) / (1600 - 300)));
 $padding-small-padding: 5px;
 $base-h3-font-size: 1.35rem;
 $base-h4-font-size: 1.25rem;
+$section-primary-background: rgba(30, 135, 240, 0.4);
 @import "~uikit/src/scss/variables-theme.scss";
 @import "~uikit/src/scss/mixins-theme.scss";
 // 3. Your custom mixin overwrites.
