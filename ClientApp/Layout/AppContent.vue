@@ -1,9 +1,9 @@
 <template>
     <div class="uk-section uk-section-default uk-padding-small">
         <div class="uk-container">
-            <div class="uk-grid-small uk-grid-divider uk-grid" uk-grid>
+            <div class="uk-grid-small  uk-grid" uk-grid>
                 <div class="uk-width-1-3@m uk-first-column ">
-                <app-leftSide class="uk-box-shadow-small" />
+                <app-leftSide class="uk-box-shadow-medium" />
                 </div>
                 <div class="uk-width-2-3@m">
                 <app-rightSide />

@@ -49,5 +49,7 @@ export default {
 </script>
 
 <style>
-
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    border-bottom:#96bef1e5 1px solid;
+}
 </style>

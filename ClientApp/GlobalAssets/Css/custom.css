@@ -8,3 +8,10 @@
 .blue-border-light {
     border: 1px solid #03a8f42d;
 }
+.blue-border-light-bottom {
+    border-bottom: 1px solid #03a8f42d;
+}
+
+.icon-education {
+background-image: url();
+}
