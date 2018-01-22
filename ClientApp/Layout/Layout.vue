@@ -2,12 +2,14 @@
 <div>
        <app-header class="uk-box-shadow-medium"></app-header>
        <app-content></app-content>
+        <app-footer></app-footer>
 </div>       
 </template>
 
 <script>
 import AppHeader from "./AppHeader.vue";
 import AppContent from "./AppContent.vue";
+import AppFooter from "./AppFooter.vue";
 import Vue from "vue";
 import VueAnalytics from "vue-analytics";
 Vue.use(VueAnalytics, {
@@ -19,14 +21,12 @@ Vue.use(VueAnalytics, {
 export default {
   components: {
     "app-header": AppHeader,
-    "app-content": AppContent
+    "app-content": AppContent,
+    "app-footer": AppFooter
   }
 };
 </script>
 
 <style>
-h5 {
-  font-size: 1rem !important;
-  line-height: 1.6;
-}
+
 </style>

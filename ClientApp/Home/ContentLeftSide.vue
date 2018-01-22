@@ -157,24 +157,118 @@
                                 <h5 class="uk-margin-remove">Факультет сетевых коммуникаций</h5>
                             </div>
                         </div>
-                         <hr class="uk-margin-small blue-border-light" />
+                        <hr class="uk-margin-small blue-border-light" />
                     </div>
                     <div class="uk-card-body uk-padding-remove uk-margin-small-top">
                         <p class="font-9-line-13"><b>Диплом:</b> B.Sc Инженер информационной безопасности и систем связи</p>
                     </div>
-                    <div class="uk-card-footer uk-margin-small-top uk-padding-remove">
-                        <p class="font-8-line-10"><b>Год:</b>
-                            <time datetime="2016-04-01T19:00">2007</time>
-                        </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-section uk-padding-small border-top-blue color-black uk-preserve-color">
+            <div class="uk-container">
+                <div class="uk-grid-small uk-grid" uk-grid>
+                    <div class="uk-width-auto@s uk-first-column uk-visible@s ">
+
+                    </div>
+                    <div class="uk-width-expand@s">
+                        <h3>Повышение квалификации</h3>
                     </div>
                 </div>
+                <div class="uk-card uk-card-small">
+                    <div class="uk-card-header uk-padding-remove  uk-box-shadow-small">
+                        <div class="uk-grid-small uk-margin-small-top" uk-grid>
+                            <div class="uk-width-auto">
+                                <img :src="pslogo" width="48" height="48" alt="Логотип" class="uk-border-circle">
+                            </div>
+                            <div class="uk-width-expand">
+                                <h5 class="uk-card-title uk-margin-remove">Pluralsight.com</h5>
+                                <h5 class="uk-margin-remove">Онлайн Академия</h5>
+                            </div>
+                        </div>
+                        <hr class="uk-margin-small blue-border-light" />
+                    </div>
+                    <div class="uk-card-body uk-padding-remove uk-margin-small-top">
+                        <ul class="uk-list uk-list-bullet font-8">
+                            <li>"Implementing and Securing an API with ASP.NET Core"</li>
+                            <li>"Docker Images and Containers for ASP.NET Core"</li>
+                            <li>"Implement Active Directory Domain Services in Windows Server 2016"</li>
+                            <li>"Manage and Maintain Active Directory Domain Services in Windows Server 2016"</li>
+                            <li>"Migrating to Exchange Server 2016"</li>
+                            <li>"Designing/Deploying Exchange 2016: Hybrid & Migrations, Recipients & Security"</li>
+                            <li>"ASP.NET Core Fundamentals"</li>
+                            <li>"Building an Enterprise Application with ASP.NET Core MVC"</li>
+                            <li>"CISSP - Security & Risk Management"</li>
+                            <li>"Building a JavaScript Development Environment"</li>
+                            <li>"Angular Fundamentals"</li>
+                        </ul>
 
+                    </div>
+
+                </div>
+
+                <div class="uk-card uk-card-small">
+                    <div class="uk-card-header uk-padding-remove  uk-box-shadow-small">
+                        <div class="uk-grid-small uk-margin-small-top" uk-grid>
+                            <div class="uk-width-auto">
+                                <img :src="rsmlogo" height="48" alt="Логотип">
+                            </div>
+                            <div class="uk-width-expand">
+                                <h5 class="uk-card-title uk-margin-remove">RSM</h5>
+                                <h5 class="uk-margin-remove">Академия</h5>
+                            </div>
+                        </div>
+                        <hr class="uk-margin-small blue-border-light" />
+                    </div>
+                    <div class="uk-card-body uk-padding-remove uk-margin-small-top">
+                        <ul class="uk-list uk-list-bullet font-8">
+                            <li>"CISSP - Security & Risk Management"</li>
+                            <li>"CISSP - Asset Security, Security Engineering"</li>
+                            <li>"CISSP - Communications and Network Security"</li>
+                            <li>"CISSP - Identity and Access Management"</li>
+                            <li>"CISSP - Security Assessment and Testing, Security Operations, Software Development Security"</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+               
+
+ <div class="uk-card uk-card-small">
+                    <div class="uk-card-header uk-padding-remove  uk-box-shadow-small">
+                        <div class="uk-grid-small uk-margin-small-top" uk-grid>
+                            <div class="uk-width-auto">
+                                <img :src="talogo" height="48" alt="Логотип">
+                            </div>
+                            <div class="uk-width-expand">
+                                <h5 class="uk-card-title uk-margin-remove">Топ-Аудит</h5>
+                                <h5 class="uk-margin-remove">Академия</h5>
+                            </div>
+                        </div>
+                        <hr class="uk-margin-small blue-border-light" />
+                    </div>
+                    <div class="uk-card-body uk-padding-remove uk-margin-small-top">
+                        <ul class="uk-list uk-list-bullet font-8">
+                           
+                            <li>"Implementing DevOps in the Real World"</li>
+                            <li>"AgilePM Project Management"</li>
+                            <li>"Автоматизация казначейства в гос. структурах / интеграция АС ЕКК"</li>
+                            <li>"Agile Estimation & Fundamentals"</li>
+                            <li>"Принципы автоматизации консолидированной отчетности по МСФО - для Холдингов"</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
 
             </div>
         </div>
     </div>
 
-  
+
 
 
 </template>
@@ -196,6 +290,9 @@ let tooltipMail = "Отправить мне сообщение";
 let tooltipDownload = "Скачать резюме";
 import avatarBig from "../GlobalAssets/Images/avatar.jpg";
 import bgulogo from "../GlobalAssets/Images/bgulogo.png";
+import pslogo from "../GlobalAssets/Images/pslogo.png";
+import rsmlogo from "../GlobalAssets/Images/rsmlogo.png";
+import talogo from "../GlobalAssets/Images/talogo.png";
 export default {
   data: function() {
     return {
@@ -205,6 +302,9 @@ export default {
       position: position,
       lang: lang,
       bgulogo: bgulogo,
+      pslogo: pslogo,
+      rsmlogo: rsmlogo,
+      talogo: talogo,
       educationShort: educationShort,
       location: location,
       tooltipLinkedin: tooltipLinkedin,
@@ -216,33 +316,7 @@ export default {
 </script>
 
 <style>
-.border-top-blue {
-  border-top: 1px solid #0283bc;
-}
 
-.color-black {
-  color: #000000;
-}
-
-.font-9-line-13 {
-  font-size: calc(9px + (14 - 9) * ((100vw - 300px) / (1600 - 300)));
-  line-height: 1.3;
-}
-
-.font-9-line-10 {
-  font-size: calc(9px + (14 - 9) * ((100vw - 300px) / (1600 - 300)));
-  line-height: 1;
-}
-
-.font-8-line-13 {
-  font-size: calc(8px + (14 - 8) * ((100vw - 300px) / (1600 - 300)));
-  line-height: 1.3;
-}
-
-.font-8-line-10 {
-  font-size: calc(8px + (14 - 8) * ((100vw - 300px) / (1600 - 300)));
-  line-height: 1;
-}
 
 .labelS {
   font-size: calc(6px + (12 - 6) * ((100vw - 300px) / (1600 - 300)));
